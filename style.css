@@ -290,6 +290,7 @@ aside p {
   top: 5px;
   right: 10px;
   cursor: pointer;
+  z-index: 120;
 }
 
 .is-open {
@@ -419,7 +420,7 @@ footer p {
   }
 
   .nav-main li {
-    margin: 0 20px;
+    margin: 0 auto;
   }
 
   /* HOME */
@@ -517,6 +518,12 @@ footer p {
     margin-bottom: 30px
   }
 
+  /* モーダル */
+  .menu-modal {
+    width: 80%;
+    height: 45%;
+  }
+
   /* ハンバーガーメニュー */
   .hamburger {
     display : block;
@@ -567,41 +574,43 @@ footer p {
     transform        : rotate(45deg);
   }
   
-  nav.globalMenuSp {
+  nav {
     position: fixed;
+    z-index : 2;
     top  : 0;
     left : 0;
-    color: #000;
-    background: #fff;
     text-align: center;
     transform: translateX(100%);
     transition: all 0.6s;
     width: 100%;
-    z-index : 2;
   }
   
-  nav.globalMenuSp ul {
-    background: #ccc;
+  .nav-main {
+    background: white;
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   
-  nav.globalMenuSp ul li {
+  .nav-list {
     list-style-type: none;
-    padding: 0;
+    margin: 0 auto;
     width: 100%;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+    background: white;
   }
-  nav.globalMenuSp ul li:last-child {
+  .nav-list:last-child {
     padding-bottom: 0;
     border-bottom: none;
   }
-  nav.globalMenuSp ul li:hover{
+  .nav-list:hover{
     background :#ddd;
   }
   
-  nav.globalMenuSp ul li a {
+  .nav-list a {
     display: block;
     color: #000;
     padding: 1em 0;
@@ -609,7 +618,8 @@ footer p {
   }
   
   /* このクラスを、jQueryで付与・削除する */
-  nav.globalMenuSp.active {
+  nav.active {
     transform: translateX(0%);
   }
+
 }
