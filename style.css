@@ -247,6 +247,57 @@ aside p {
   object-fit: cover;
 }
 
+.item {
+  cursor: pointer;
+}
+
+.item img:hover {
+  opacity: 0.5;       /* マウスオーバーで画像が半透明になる */
+}
+
+
+/* モーダル */
+.item-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.menu-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform:translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  background: seashell;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fa-times {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.is-open {
+  display: block;
+}
+
+
+
 /* CONTACT */
 #contact {
   background-image: url(images/contact-bg.jpg);
