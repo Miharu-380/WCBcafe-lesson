@@ -521,7 +521,7 @@ footer p {
   /* モーダル */
   .menu-modal {
     width: 80%;
-    height: 45%;
+    height: auto;
   }
 
   /* ハンバーガーメニュー */
