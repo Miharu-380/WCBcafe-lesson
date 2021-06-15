@@ -18,7 +18,7 @@ WCBカフェ　（1冊ですべて身につくHTML＆CSSとWebデザイン　入
 - Google Map マイマップ
 - Youtube埋め込み
 
-###構成
+### 構成
 
 - HTML
 - CSS
